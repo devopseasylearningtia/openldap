@@ -32,7 +32,7 @@ services:
     container_name: phpldapadmin
     hostname: phpldapadmin
     ports: 
-      - "80:80"
+      - "801:80"
     environment: 
       - PHPLDAPADMIN_LDAP_HOSTS=openldap
       - PHPLDAPADMIN_HTTPS=false
@@ -44,3 +44,9 @@ services:
 networks:
   openldap:
     driver: bridge
+
+
+
+#    user: cn=admin,dc=ramhlocal,dc=com
+
+# passwd: admin_pass
